@@ -10,7 +10,7 @@ public partial class SymphonyContext : DbContext
     public SymphonyContext(DbContextOptions<SymphonyContext> options)
         : base(options)
     {
-        // DbInitializer.Initialize(this);
+        DbInitializer.Initialize(this);
     }
 
     public virtual DbSet<Course> Course { get; set; }
